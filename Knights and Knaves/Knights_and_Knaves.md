@@ -18,7 +18,7 @@ The objective is to conclude who is a knight and who is a knave, based on the st
 
 3. A stranger passed by and asked A, 'Are you a knight or a knave?' A answered, but rather indistinctly, so the stranger could not make out what he said.  
    The stranger then asked B, 'What did A say?' B replied, 'A said that he is a knave.'
-
-At this point, the third man, C, said, 'Don't believe B; he is lying\!'  
+   At this point, the third man, C, said, 'Don't believe B; he is lying\!'
+     
 [Link to game](https://adam.math.hhu.de/#/g/jadabouhawili/knightsandknaves-lean4game/world/DSL_Knights_Knaves/level/3)
 
