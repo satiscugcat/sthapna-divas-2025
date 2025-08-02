@@ -48,7 +48,7 @@ print(ifthenelse (iszero (sub (two) (plus (one) (one))))
 
 def num_to_church(n):
     if n == 0:
-        return id
+        return zero
     else:
         t = (num_to_church(n-1))
         return succ(t)
