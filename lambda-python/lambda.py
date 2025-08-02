@@ -47,7 +47,12 @@ print(ifthenelse (iszero (sub (two) (plus (one) (one))))
       )
 
 def num_to_church(n):
-    return lambda f: id if n == 0 else f(num_to_church(n-1))
+    if n == 0:
+        return id
+    else:
+        t = (num_to_church(n-1))
+        return succ(t)
+    
 def church_to_num(n):
     return n (lambda x: x+1) (0)
 
@@ -63,9 +68,10 @@ fix = (
     ))
 )
 
+F = (lambda f: (lambda x: (iszero(x)
+                           (lambda _: one)
+                           (lambda _: mul(x)(fact(pred(x)))))(id)))
 
-F = (lambda f: (lambda x: (1 if x == 0 else (x * (f(x-1))))))
 fact = fix(F)
 
-print(fact(5))
-
+print(church_to_num(fact(num_to_church((5)))))
